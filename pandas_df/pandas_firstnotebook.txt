@@ -1,0 +1,17 @@
+heroes= { "name": ["Wonder Woman", "Batman", "Superman"], 
+          "alterego": ["Diana Prince", "Bruce Wayne", "Clark Kent"],
+          "power": ["lasso of truth", "money", "super strength"] }
+import pandas as pd
+herodf = pd.DataFrame(heroes)
+herodf
+#return multiple columns
+herodf[["name","alterego"]]
+# this is another dataframe
+
+#return rows
+# herodf.iloc[2] # integer location
+#herodf.iloc[[1,2]] # return two rows
+# herodf.iloc[[1,2],2] # return rows 1 and 2 and then column 2
+# herodf.iloc[[0,1],1]
+# herodf = herodf.set_index("name"
+herodf.loc[["Wonder Woman"], "power"]
