@@ -1,0 +1,191 @@
+curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+sudo apt update
+sudo apt install mongodb-org -y
+
+sudo systemctl start mongod.service  #Start the MongoDB service.
+sudo systemctl status mongod         #Start the MongoDB service.
+
+The following command should return the socket MongoDB is listening on.
+The socket should be mongodb://127.0.0.1:27017/
+
+mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+python3 -m pip install pymongo
+
+vim pyMongo01.py
+
+------------------------------------------------------
+#!/usr/bin/python3
+"""Python and MongoDB || by RZFeeser@alta3.com"""
+from pymongo import MongoClient
+from pprint import pprint
+
+def main():
+    # connect to MongoDB using the socket we observed mongoDB start on
+    client = MongoClient( "mongodb://127.0.0.1:27017/" )
+    db=client.admin
+    
+    # Issue the serverStatus command and print the results
+    serverStatusResult=db.command("serverStatus")
+    pprint(serverStatusResult)
+
+if __name__ == "__main__":
+    main()
+
+------------------------------------------------------
+python3 pyMongo01.py
+
+vim pyMongo02.py
+------------------------------------------------------
+#!/usr/bin/python3
+
+from pymongo import MongoClient
+from random import randint
+
+def main():
+    #Step 1: Connect to MongoDB - Note: Change connection string as needed
+    client = MongoClient(port=27017)
+    db=client.business
+    
+    #Step 2: Create sample data
+    names = ['Kitchen','Animal','State', 'Tasty', 'Big','City','Fish', 'Pizza','Goat', 'Salty','Sandwich','Lazy', 'Fun']
+    company_type = ['LLC','Inc','Company','Corporation']
+    company_cuisine = ['Pizza', 'Bar Food', 'Fast Food', 'Italian', 'Mexican', 'American', 'Sushi Bar', 'Vegetarian']
+    
+    for x in range(1, 501):
+        business = {
+            'name' : names[randint(0, (len(names)-1))] + ' ' + names[randint(0, (len(names)-1))]  + ' ' + company_type[randint(0, (len(company_type)-1))],
+            'rating' : randint(1, 5),
+            'cuisine' : company_cuisine[randint(0, (len(company_cuisine)-1))] 
+        }
+        
+        #Step 3: Insert business object directly into MongoDB via insert_one
+        result=db.reviews.insert_one(business)
+        
+        #Step 4: Print to the console the ObjectID of the new document
+        print('Created {0} of 500 as {1}'.format(x,result.inserted_id))
+    
+    #Step 5: Tell us that you are done
+    print('finished creating 500 business reviews')
+
+if __name__ == "__main__":
+    main()
+---------------------------------------------------------------------------------
+
+python3 pyMongo02.py
+
+vim pyMongo03.py
+---------------------------------------------------------------------------------
+
+#!/usr/bin/python3
+
+"""Reading data from MongoDB | RZFeeser@alta3.com"""
+from pymongo import MongoClient
+
+def main():
+    # Connect to the MongoDB, change the connection string per your MongoDB environment
+    client = MongoClient(port=27017)
+    
+    # Set the db object to point to the business database
+    db=client.business
+    
+    # Showcasing the count() method of find, count the total number of 5 ratings 
+    print('The number of 5 star reviews:')
+    
+    # this returns all reivews that match a 5 star rating
+    allmatches = db.reviews.find({"rating": 5})
+
+
+    total = 0
+    # loop across all the matches, counting them as we go
+    for fivestar in allmatches:
+        total += 1
+
+    print(total)
+
+    # Now let's use the aggregation framework to sum the occurrence of each rating across the entire data set
+    print('\nThe sum of each rating occurrence across all data grouped by rating ')
+    stargroup=db.reviews.aggregate(
+    
+    # The Aggregation Pipeline is defined as an array of different operations
+    [
+    
+    # The first stage in this pipe is to group data
+    { '$group':
+        { '_id': "$rating",
+         "count" :
+                     { '$sum' :1 }
+        }
+    },
+    
+    # The second stage in this pipe is to sort the data
+    {"$sort":  { "_id":1}
+    }
+    # Close the array with the ] tag             
+    ] )
+    
+    # Print the result
+    for group in stargroup:
+        print(group)
+        
+if __name__ == "__main__":
+    main()
+-------------------------------------------------------------------
+python3 pyMongo03.py
+
+vim pyMongo04.py
+-------------------------------------------------------------------
+
+#!/usr/bin/python3
+"""Updating MongoDB with Python || RZFeeser@alta3.com"""
+
+from pymongo import MongoClient
+#include pprint for readabillity of the 
+from pprint import pprint
+
+def main():
+    #change the MongoClient connection string to your MongoDB database instance
+    client = MongoClient(port=27017)
+    db=client.business
+
+    #choose a single review from our db
+    ASingleReview = db.reviews.find_one({})
+    print('A sample document:')
+    pprint(ASingleReview)
+
+    #update the review by a single like
+    result = db.reviews.update_one({'_id' : ASingleReview.get('_id') }, {'$inc': {'likes': 1}})
+    print('Number of documents modified : ' + str(result.modified_count))
+
+    #create an updated document object
+    UpdatedDocument = db.reviews.find_one({'_id':ASingleReview.get('_id')})
+    print('The updated document:')
+    pprint(UpdatedDocument)
+
+if __name__ == "__main__":
+    main()
+-------------------------------------------------------------------
+python3 pyMongo04.py
+
+vim pyMongo05.py
+-------------------------------------------------------------------
+#!/usr/bin/python3
+"""Deleting MongoDB data with Python || RZFeeser@alta3.com"""
+
+from pymongo import MongoClient
+#include pprint for readabillity of the 
+from pprint import pprint
+
+def main():
+    #change the MongoClient connection string to your MongoDB database instance
+    client = MongoClient(port=27017)
+    db = client.business
+
+    # this will remove all entries in the database "business"
+    result = db.reviews.drop()
+
+if __name__ == "__main__":
+    main()
+-------------------------------------------------------------------
+python3 pyMongo05.py
+
