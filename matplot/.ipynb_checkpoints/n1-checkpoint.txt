@@ -1,0 +1,25 @@
+from matplotlib 
+import pyplot as plt 
+import pandas as pd 
+#year= [1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017] 
+#cheddar= [5.79, 5.91, 6.01, 6.07, 6.31, 6.04, 6.45, 6.8, 6.94, 6.93, 6.84, 7.03, 8.72, 9.11, 9.54, 9.77, 9.77, 10.61, 9.52, 9.18, 9.05, 9.04, 9.17, 9.07, 9.05, 9.04, 9.19, 9.51, 9.6, 10.01, 9.87, 9.89, 9.76, 9.38, 10.2, 10.15, 10.43, 10.11, 10.22, 10.24, 10.06, 9.59, 9.59, 9.64, 9.85, 10.17, 10.39, 11.07] 
+#swiss= [0.88, 0.94, 1.06, 1.06, 1.18, 1.09, 1.25, 1.21, 1.33, 1.35, 1.32, 1.27, 1.29, 1.25, 1.24, 1.28, 1.29, 1.23, 1.28, 1.23, 1.35, 1.21, 1.18, 1.18, 1.14, 1.09, 1.07, 0.99, 1.01, 1.09, 1.02, 1.12, 1.09, 1.13, 1.2, 1.24, 1.23, 1.24, 1.1, 1.16, 1.18, 1.14, 1.09, 1, 1.02, 1.05, 1.06, 1.05] 
+# pandas instead data= pd.read_csv("a
+
+from matplotlib 
+import pyplot as plt 
+import pandas as pd 
+data= pd.read_csv("annualcheeseconsumed.txt") 
+year= data["Year"]
+# pandas SERIES 
+cheddar= data["Cheddar"] 
+swiss= data["Swiss"]
+# adding two different pieces of data to the plot 
+plt.plot(year, cheddar, label="Avg. Cheddar Consumed") 
+plt.plot(year, swiss, label="Avg. Swiss Consumed") 
+plt.legend() 
+plt.grid() 
+plt.xlabel("Year") 
+plt.ylabel("Cheese Consumed in Pounds Per Year") 
+plt.title("AMERICANS LOVE CHEESE!") 
+plt.show()

@@ -1,0 +1,544 @@
+    1  live-class-id chad-pds2
+    2  sudo chmod 755 ~/ ; clear
+    3  sudo mkdir -p /var/www/static
+    4  cd /var/www
+    5  ll
+    6  cd
+    7  rm -rf $HOME/static
+    8  sudo chown student:www-data /var/www/static/
+    9  ln -s /var/www/static $HOME/static
+   10  ll
+   11  cd /etc/nginx/sites-enabled/
+   12  ll
+   13  view default 
+   14  live-class-id chad-pds2
+   15  ls -la
+   16  pwd
+   17  cd
+   18  who
+   19  ls -l
+   20  pwd
+   21  ls -l
+   22  mkdir mycode
+   23  export TOKEN=ghp_WlXecbhNvcDmyz04faA67oGlcKJtR63IMGU
+   24  export USERNAME=ahvsrinivas
+   25  export EMAIL=ahvs@hotmail.com
+   26  wget https://labs.alta3.com/courses/github/scripts/git-connect.sh
+   27  ls -l
+   28  chmod +x get
+   29  pwd
+   30  ls -l
+   31  chmod +x git-connect.sh 
+   32  ./git-connect.sh 
+   33  export TOKEN=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
+   34  ./git-connect.sh 
+   35  clear
+   36  ls -l
+   37  cp git-connect.sh test.sh
+   38  vi test.sh 
+   39  ./git-connect.sh 
+   40  ls
+   41  cd mycode/
+   42  git status
+   43  cd ..
+   44  rm -rf mycode/
+   45  ./git-connect.sh 
+   46  cd mycode/
+   47  git status
+   48  # all set!! :)
+   49  git config --global user.name "ahvsrinivas"
+   50  clear
+   51  ls -lhrt
+   52  cd ..
+   53  ls -lht
+   54  rm -f test.sh 
+   55  cd mycode/
+   56  vi regex.py
+   57  cd
+   58  vi .tmux.conf 
+   59  pwd
+   60  cd mycode/
+   61  ls -lhrt
+   62  pls -lhrtwd
+   63  pwd
+   64  ls -lhrt
+   65  cd
+   66  vi .tmux.conf 
+   67  exit
+   68  cd mycode/
+   69  mkdir regex02
+   70  cd regex02/
+   71  python3 sipparser01.py 
+   72  wget https://static.alta3.com/files/networktrace.txt
+   73  ls -l
+   74  vi sipparser02.py 
+   75  exit
+   76  pwd
+   77  ls -l
+   78  cd mycode/
+   79  ls -l
+   80  vi regex.py 
+   81  python regex
+   82  python3 regex.py 
+   83  python3 regex.py
+   84  clear
+   85  vi
+   86  clear
+   87  pwd
+   88  git add *
+   89  git commit -m"cleaning with pandas"
+   90  git push origin main
+   91  clear
+   92  pwd
+   93  mkdir challenge
+   94  cd challenge/
+   95  wget https://raw.githubusercontent.com/csfeeser/Python/master/data%20sets/annualcheeseconsumed.txt
+   96  ls -lhrt
+   97  vi annualcheeseconsumed.txt 
+   98  vi a.py
+   99  python3 a.py
+  100  clear
+  101  python3 a.py
+  102  clear
+  103  pwd
+  104  vi ~/.vimrc
+  105  clear
+  106  python a.py
+  107  ls -l
+  108  python a.py 
+  109  python3 a.py 
+  110  vi ~/.vimrc
+  111  python3a.py
+  112  vi ~/.vimrc
+  113  python3a.py
+  114  vi ~/.vimrc
+  115  python a.py
+  116  python3 a.py
+  117  which python
+  118  /usr/bin/python3 --version
+  119  /usr/bin/python3 a.py
+  120  exit
+  121  cd mycode/regex02/
+  122  vim sipparser01.py
+  123  python3 sipparser02.py 
+  124  vim http_parser.py
+  125  python3 http_parser.py 
+  126  clear
+  127  vi http_parser.py 
+  128  python3 http_parser.py 
+  129  vi http_parser.py 
+  130  python3 http_parser.py 
+  131  vi http_parser.py 
+  132  python3 http_parser.py 
+  133  clear
+  134  python3 http_parser.py 
+  135  vi http_parser.py 
+  136  python3 http_parser.py 
+  137  vi http_parser.py 
+  138  clear
+  139  python3 http_parser.py 
+  140  vi http_parser.py 
+  141  python3 http_parser.py 
+  142  vi http_parser.py 
+  143  python3 http_parser.py 
+  144  live-gtg 12
+  145  python3 http_parser.py 
+  146  vi http_parser.py 
+  147  python3 http_parser.py 
+  148  vi http_parser.py 
+  149  python3 http_parser.py 
+  150  vi http_parser.py 
+  151  python3 http_parser.py 
+  152  vi http_parser.py 
+  153  python3 http_parser.py 
+  154  vi http_parser.py 
+  155  python3 http_parser.py 
+  156  vi http_parser.py 
+  157  python3 http_parser.py 
+  158  vi http_parser.py 
+  159  python3 http_parser.py 
+  160  vi http_parser.py 
+  161  python3 http_parser.py 
+  162  vi http_parser.py 
+  163  python3 http_parser.py 
+  164  cd ~/mycode
+  165  git add *
+  166  git commit -m "second"
+  167  git push origin
+  168  history|more
+  169  which live-gtg
+  170  vi ~/.local/bin
+  171  cd ~/.local/
+  172  cd bin
+  173  ls -l
+  174  vi live-gtg 
+  175  vi live-lab 
+  176  vi curtana.py 
+  177  sudo -iu root
+  178  ls -lhrt
+  179  cd
+  180  cd mycode/
+  181  ls -l
+  182  mkdir advregex
+  183  cd advregex/
+  184  vim myre03.py
+  185  chmod +x myre03.py 
+  186  ./y
+  187  ./myre03.py 
+  188  vi myre03.py 
+  189  ./myre03.py 
+  190  clear
+  191  ls -lhrt
+  192  vi myre03.py 
+  193  ./myre03.py 
+  194  vi myre03.py 
+  195  ./myre03.py 
+  196  vi myre03.py 
+  197  ./myre03.py 
+  198  clear
+  199  vi myre03.py 
+  200  ./myre03.py 
+  201  vi myre03.py 
+  202  ./myre03.py 
+  203  vi myre03.py 
+  204  vi narwhalrunner.py
+  205  chmox u+x narwhalrunner.py 
+  206  chmod u+x narwhalrunner.py 
+  207  ./narwhalrunner.py 
+  208  vi narwhalrunner.py
+  209  ./narwhalrunner.py 
+  210  vi narwhalrunner.py
+  211  ./narwhalrunner.py 
+  212  cd ..
+  213  git add *
+  214  git commit -m "third"
+  215  git push origin
+  216  live-gtg 13
+  217  pip3 -m pip install pandas
+  218  python3 -m pip install pandas
+  219  clear
+  220  pwd
+  221  cd ~/.vim
+  222  ls -la
+  223  mkdir autoload
+  224  cd autoload/
+  225  wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  226  ls -lhrt
+  227  pwd
+  228  vi plug.vim 
+  229  pwd
+  230  cd ..
+  231  ls -lart
+  232  mkdir plugged
+  233  ls -l
+  234  cd plugged/
+  235  ls -l
+  236  mkdir vimux
+  237  ls -l
+  238  cd vimux/
+  239  wget https://github.com/preservim/vimux/archive/refs/heads/master.zip
+  240  ls -l
+  241  unzip master.zip 
+  242  wget https://github.com/preservim/vimux/tarball/master
+  243  ls -lhrt
+  244  rm -f master.zip 
+  245  mv master p.tar.gz
+  246  tar zxvf p.tar.gz 
+  247  ls -lhrt
+  248  cd preservim-vimux-616fcb4
+  249  ls -la
+  250  mv plugin ../
+  251  cd ..
+  252  ls -lhrt
+  253  rm -rf preservim-vimux-616fcb4
+  254  rm -f p.tar.gz 
+  255  ls -l
+  256  cd plugin/
+  257  ls -l
+  258  cd
+  259  vi ~/
+  260  cd ~/
+  261  vi .vimrc
+  262  clear
+  263  cd
+  264  pwd
+  265  cd mycode/
+  266  ls -l
+  267  vi
+  268  cd
+  269  pwd
+  270  cd ~
+  271  vi .vimrc
+  272  clear
+  273  cd
+  274  vi
+  275  pwd
+  276  cd mycode/
+  277  ls -lhrt
+  278  vi regex.py 
+  279  cd~
+  280  cd ~
+  281  vi .vimrc
+  282  cd
+  283  cd mycode/
+  284  vi regex.py 
+  285  vi ~/.vimrc
+  286  vi regex.py 
+  287  cd ~/
+  288  cd .vim
+  289  ls -la
+  290  mv autoload t
+  291  clear
+  292  cd
+  293  cd mycode/
+  294  clear
+  295  vi regex.py 
+  296  cd ~
+  297  pwd
+  298  cd .vim
+  299  ls -la
+  300  mv t autoload
+  301  cd
+  302  cd mycode/
+  303  clear
+  304  vi regex.py 
+  305  pwd
+  306  cd ~/.vim
+  307  ls -la
+  308  cd plugged/
+  309  ls -l
+  310  cd vimux/
+  311  ls -la
+  312  cd plugin/
+  313  ls -la
+  314  pwd
+  315  cd
+  316  pwd
+  317  cd mycode/
+  318  clear
+  319  ls -l
+  320  pwd
+  321  wget https://static.alta3.com/files/ciscodata.csv
+  322  mkdir files
+  323  cd files/
+  324  wget https://static.alta3.com/files/*
+  325  wget https://static.alta3.com/files
+  326  ls -lhrt
+  327  pwd
+  328  cd ..
+  329  ls -lhrt
+  330  mv ciscodata.csv files/
+  331  cd files/
+  332  wget https://static.alta3.com/files/ciscodata2.json
+  333  ls -l
+  334  wget https://static.alta3.com/files/movies.xls
+  335  ls -l
+  336  wget -r https://static.alta3.com/files
+  337  cd .
+  338  cd ..
+  339  clear
+  340  vi pandas_firstnotebook.txt
+  341  python3 -m pip install xlrd openpyxl xlwt'
+  342  python3 -m pip install xlrd openpyxl xlwt
+  343  cd files/
+  344  wget https://static.alta3.com/files/ciscodata2.json
+  345  ls -l
+  346  clear
+  347  vi notes.tt
+  348  cd ..
+  349  rmdir files/
+  350  python3 -m pip install pandas matplotlib
+  351  clear
+  352  ls -l
+  353  cd ..
+  354  cd static
+  355  ls -lhrt
+  356  pwd
+  357  cd
+  358  ls -l
+  359  cd mycode/
+  360  clear
+  361  mkdir cashflow
+  362  cd cashflow/
+  363  vi expenses_and_incoome.csv
+  364  vu
+  365  vi
+  366  cd ..
+  367  clear
+  368  git add *; git commit -m "cashflow"; git push origin
+  369  clear
+  370  wget https://live.alta3.com/content/py-datasci/labs/content/py-datasci/LECTURE_datasci_pandas_cleaning_data.html
+  371  ifconfig
+  372  clear
+  373  git clone https://github.com/rzfeeser/python-data-cleaning
+  374  la -lger
+  375  clear
+  376  ls -lhrt
+  377  cd python-data-cleaning/
+  378  ls -l
+  379  cd datasets/
+  380  sl -l
+  381  ls -l
+  382  pwd
+  383  clear
+  384  cd ..
+  385  ls -lhrt
+  386  cd ..
+  387  ls -lhrt
+  388  cd challenge/
+  389  vi a.py 
+  390  clear
+  391  python3 a.py
+  392  ls -la
+  393  vi a.py 
+  394  python a.py 
+  395  python3 a.py 
+  396  vi a.py 
+  397  exit
+  398  who
+  399  ls -lart
+  400  cd .bash_training/
+  401  ls -la
+  402  vi stty_ixon.sh 
+  403  ls -lhrt
+  404  cd mycode/
+  405  ls -lhrt
+  406  cd files/
+  407  sl -l
+  408  ls -l
+  409  ls -lhrt
+  410  cd ..
+  411  ls -lhrt
+  412  pwd
+  413  mkdir pandas_df
+  414  mv files/* pandas_df/
+  415  ls -lhrt
+  416  mv 5* pandas_df/
+  417  ls -lhrt
+  418  clear
+  419  ls -lhrt
+  420  mv pandas_firstnotebook.txt pandas_df/
+  421  ls -hrt
+  422  cd files/
+  423  ls -la
+  424  clear
+  425  cd ..
+  426  clear
+  427  ls -lhart
+  428  ls -lhrt
+  429  mkdir scripts
+  430  mv regex.py scripts/
+  431  mv regex02/ scripts/
+  432  mv advregex/ scripts/
+  433  clear
+  434  ls -lhrt
+  435  vi
+  436  clear
+  437  ls -lhrt
+  438  cd python-data-cleaning/
+  439  ls -lhrt
+  440  cd datasets/
+  441  ls -lhrt
+  442  python3 a.py
+  443  cd mycode/challenge/
+  444  ls -l
+  445  python3 a.py
+  446  # there you go-- I think the issue may have been that the script up top didn't get saved before running it in the bottom
+  447  # in vim if you type   :w   it will save without closing... which is something annoying you have to do when using split screen tmux, unfortunately :-/
+  448  python3 a.py
+  449  cd ..
+  450  cd databasedemo/
+  451  clear
+  452  ls -l
+  453  python3 db.py
+  454  ls -l
+  455  python3 db.py
+  456  vi sqlite_commands.txt
+  457  python3 db.py
+  458  sqlite demo.db
+  459  sqlite3 demo.db
+  460  sqllite3 demodb
+  461  pwd
+  462  ls -l
+  463  sqlite3 demo.db
+  464  which sqlite3
+  465  sqlite3
+  466  sqlite3 demo.db 
+  467  clear
+  468  ls -l
+  469  python3 db.py
+  470  cd ..
+  471  mkdir pyapi
+  472  cd pyapi
+  473  mkdir sqldb
+  474  vi database01.py
+  475  pwd
+  476  vi databse01.py
+  477  clear
+  478  ls -lhrt
+  479  pwd
+  480  ls -lhrt
+  481  python3 databse01.py
+  482  cd
+  483  cd mycode/postgres_db/
+  484  sudo apt-get install postgresql libpq-dev postgresql-client postgresql-client-common -y
+  485  clear
+  486  sudo -i -u postgres
+  487  clear
+  488  cd sc
+  489  pwd
+  490  ls -lhrt
+  491  vi postgres_test.py
+  492  python postgres_test.py 
+  493  python3 postgres_test.py 
+  494  exit
+  495  pwd
+  496  cd mycode/postgres_db/
+  497  ls -lhrt
+  498  vi postgres_test.py 
+  499  sudo -iu root
+  500  python3 -m pip install psycopg2
+  501  ps -aef|grep jupyter
+  502  ls -lhrt
+  503  python3 postgres_test.py 
+  504  kill -9 18109 18141
+  505  clear
+  506  ls -hlrt
+  507  vi notes.txt 
+  508  cd ..
+  509  git add *; git commit -m "Postgres"; git push origin
+  510  clear
+  511  ls -lhrt
+  512  git add *; git commit -m "Postgres"; git push origin
+  513  clear
+  514  ls -lhrt
+  515  mkdir dbmongo
+  516  cd dbmongo/
+  517  curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  518  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+  519  sudo apt update
+  520  sudo apt install mongodb-org -y
+  521  sudo systemctl start mongod.service
+  522  clear
+  523  ls -lhrt
+  524  vi notes.txt
+  525  pwd
+  526  ls -lhrt
+  527  vi pyMongo01.py 
+  528  vi pyMongo02.py 
+  529  vi pyMongo03.py 
+  530  vi pyMongo04.py 
+  531  vi pyMongo05.py 
+  532  vi pyMongo04.py 
+  533  vi pyMongo05.py 
+  534  clear
+  535  ls -lhrt
+  536  vi pyMongo04.py 
+  537  vi pyMongo05.py 
+  538  cd ..
+  539  git add *; git commit -m "Postgres"; git push origin
+  540  ls -lhrt
+  541  cd dbmongo/
+  542  sl -lhrt
+  543  ls -lhrt
+  544  history > cmds.txt

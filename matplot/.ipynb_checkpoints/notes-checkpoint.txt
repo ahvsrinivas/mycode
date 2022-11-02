@@ -1,0 +1,9 @@
+mkdir -p ~/mycode/graphing
+python3 -m pip install matplotlib
+python3 ~/mycode/graphing/graphmaker-hist.py
+python3 ~/mycode/graphing/graphmaker-bar.py
+python3 ~/mycode/graphing/graphmaker-csvreader.py
+
+vim ~/mycode/graphing/graphmaker-bar.py
+vim ~/mycode/graphing/2018summary.csv
+vim ~/mycode/graphing/graphmaker-csvreader.py
