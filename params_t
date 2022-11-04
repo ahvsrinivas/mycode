@@ -1,0 +1,16 @@
+/opt/ttyd/ttyd --interface 0.0.0.0 --port 2222 --client-option disableLeaveAlert=true --client-option titleFixed=bchd Alta3 Terminal --client-option theme={"background":"#0f0f0f", "black":"#000000", "red":"#eb008a", "green":"#37b349", "yellow": "#f8ca12", "blue":"#168ee9", "magenta":"#b31e8d", "cyan":"#00aabb", "white":"#ffffff", "brightBlack": "#505050", "brightBlue":"#168ee9", "brightCyan": "#00aabb", "brightMagenta":"#b31e8d", "brightRed":"#eb008a", "brightWhite":"#ffffff", "brightYellow": "#f9ca12", "brightGreen": "#37b349", "cursor":"#eb008a"} /usr/bin/tmux new -A -s ttyd
+
+student    13847       1  0 Nov02 ?        00:00:15 /usr/bin/tmux new -A -s ttyd
+
+/opt/ttyd/ttyd --interface 0.0.0.0 --port 2222
+--client-option disableLeaveAlert=true
+--client-option titleFixed=bchd Alta3 Terminal
+--client-option
+theme={"background":"#0f0f0f", "black":"#000000", "red":"#eb008a",
+"green":"#37b349", "yellow": "#f8ca12",
+"blue":"#168ee9", "magenta":"#b31e8d", "cyan":"#00aabb",
+"white":"#ffffff", "brightBlack": "#505050",
+"brightBlue":"#168ee9", "brightCyan": "#00aabb",
+"brightMagenta":"#b31e8d", "brightRed":"#eb008a", "brightWhite":"#ffffff",
+"brightYellow": "#f9ca12", "brightGreen": "#37b349", "cursor":"#eb008a"}
+/usr/bin/tmux new -A -s ttyd
